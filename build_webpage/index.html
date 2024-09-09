@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base target="_top">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Campsite Map</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<!--my CSS -->
+	<link rel="stylesheet" href="campsites.css" integrity="sha384-rrVD4ErZxn5xUSPQJk9ycgzOmVXLC4wXqn5iDz67eaUbNHpSgSO7DK37BpQ2dPOu">
+
+	<!--load all Font Awesome styles -->
+	<link href="fontawesome/css/all.min.css" rel="stylesheet">
+
+	<!--Leaflet -->
+	<link rel="stylesheet" href="leaflet/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H"/>
+    <script src="leaflet/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH"></script>
+
+	<!--Leaflet.extra-markers -->
+	<link rel="stylesheet" href="leaflet-extra-markers/css/leaflet.extra-markers.min.css">
+	<script src="leaflet-extra-markers/js/leaflet.extra-markers.min.js"></script>
+
+	<!--leaflet-ajax -->
+	<script src="leaflet-ajax/leaflet.ajax.min.js"></script>
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		.leaflet-container {
+			height: 400px;
+			width: 600px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+
+	
+</head>
+<body>
+<div id="map" style="width: 100%; height: 100%;"></div>
+
+
+<script>
+/*
+ * Marker definitions.
+ */
+var TentMarker = L.ExtraMarkers.icon({
+	icon: 'fa-campground',
+	markerColor: 'blue',
+	shape: 'circle',
+	prefix: 'fa'
+});
+
+var HouseMarker = L.ExtraMarkers.icon({
+	icon: 'fa-home',
+	markerColor: 'blue',
+	shape: 'circle',
+	prefix: 'fa'
+});
+
+var CampsiteHouseMarker = L.ExtraMarkers.icon({
+	icon: 'fa-campground-home',
+	markerColor: 'blue',
+	shape: 'circle',
+	prefix: 'fa'
+});
+
+/*
+ * Layer definitions.
+ */
+var osmMapnik = new L.TileLayer(
+    'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {
+        minZoom: 3,
+        maxZoom: 20,
+        maxNativeZoom: 19,
+        attribution: 'Map data © OpenStreetMap contributors'
+    }
+);
+
+var osmOpenTopoMap = new L.TileLayer(
+    'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+    {
+        minZoom: 3,
+        maxZoom: 20,
+        maxNativeZoom: 17,
+        attribution: 'Kartendaten: &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>-Mitwirkende, <a href="http://viewfinderpanoramas.org">SRTM</a> | Kartendarstellung: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+    }
+);
+
+/*
+ * GeoJSON Layer with only campsites
+ */
+var campsites = new L.GeoJSON.AJAX(["geojsonFeatures.json"],{
+	filter: function(feature, layer) {
+		return Object.values(feature.properties.category).includes("campsite");
+    },
+	pointToLayer: function (feature, latlng) {
+	if(Object.values(feature.properties.category).includes("campsite") && Object.values(feature.properties.category).includes("house"))
+	{
+		return L.marker(latlng, {icon: CampsiteHouseMarker});
+	}
+	return L.marker(latlng, {icon: TentMarker});
+	},
+	onEachFeature: function (feature, layer) {
+		return layer.bindPopup("<b>" + feature.properties.name + '</b></br> <a href="'+ feature.properties.url +'" target="_blank">'+ feature.properties.url + "</a>");
+	}
+})
+
+/*
+ * GeoJSON Layer with only houses
+ */
+var houses  = new L.GeoJSON.AJAX(["geojsonFeatures.json"],{
+	filter: function(feature, layer) {
+		return Object.values(feature.properties.category).includes("house");
+    },
+	pointToLayer: function (feature, latlng) {
+		if(Object.values(feature.properties.category).includes("campsite") && Object.values(feature.properties.category).includes("house"))
+		{
+			return L.marker(latlng, {icon: CampsiteHouseMarker});
+		}
+		return L.marker(latlng, {icon: HouseMarker});
+	},
+	onEachFeature: function (feature, layer) {
+		return layer.bindPopup("<b>" + feature.properties.name + '</b></br> <a href="'+ feature.properties.url +'" target="_blank">'+ feature.properties.url + "</a>");
+	}
+})
+
+/*
+ * Collect base and overlay layers
+ */
+var baseLayers = {
+    "OpenStreetMap": osmMapnik,
+    "OpenTopoMap": osmOpenTopoMap,
+};
+
+var overlayLayers = {
+    "Zeltplätze": campsites,
+	"Häuser": houses
+};
+
+/*
+ * Configure Map. Center is 51°09'48.1"N 10°26'51.7"E 51.163361, 10.447683
+ */
+const map = L.map('map').setView([51.163361, 10.447683], 6);
+
+const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+/*
+ * Add both layer as default
+ */
+map.addLayer(campsites);
+map.addLayer(houses);
+
+
+/*
+ * Layer selector with base and overlay layers.
+ */
+let layercontrol = L.control.layers(baseLayers, overlayLayers).addTo(map);
+
+/*
+ * A nice scale in the bottom left corner.
+ */
+L.control.scale().addTo(map);
+
+</script>
+
+</body>
+</html>
