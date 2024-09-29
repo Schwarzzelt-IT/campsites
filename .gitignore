@@ -1,0 +1,10 @@
+# Dependency directories
+node_modules/
+
+# local build script
+build.bat
+build.sh
+
+# Build results
+webpage
+
