@@ -1,6 +1,8 @@
 import shutil
 import os
 
+# Clear folder an recreate
+shutil.rmtree("webpage", ignore_errors=True)
 os.makedirs("webpage")
 
 # Leaflet
@@ -26,3 +28,4 @@ shutil.copytree(
 # Assests
 shutil.copy2("build_webpage/index.html", "webpage/index.html")
 shutil.copy2("build_webpage/campsites.css", "webpage/campsites.css")
+shutil.copy2("build_webpage/map.js", "webpage/map.js")

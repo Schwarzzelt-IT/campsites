@@ -1,3 +1,51 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.leaflet-container {
+  height: 400px;
+  width: 600px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.leaflet-control-info{
+  border: 2px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: none;
+  background: #fff;
+  background-clip: padding-box;
+}
+
+.leaflet-control-info-toggle{
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;	
+  display: block;
+  font-size: 1.5rem;
+  
+}
+.leaflet-control-info-toggle i{
+  color: #000;
+}
+
+.leaflet-control-info-text {
+  display: none;
+  width: 250px;
+  padding: 10px 14px;
+  line-height: 120%;
+}
+
+.leaflet-control-info-expanded .leaflet-control-info-toggle {
+  display: none;
+}
+
+.leaflet-control-info-expanded .leaflet-control-info-text {
+  display: block;
+  position: relative;
+}
+
 .fa-campground-home:before {
   font-size: 10px;
   content: "\f015 \f6bb"; }
