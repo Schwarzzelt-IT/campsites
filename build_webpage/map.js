@@ -156,8 +156,8 @@ info.onAdd = function(map){
 		<span>
 		<b>Campsite Map by Schwarzzelt IT</b>
 		<p>Fast jede Aktion beginnt mit der Suche nach einer großartigen Unterkunft oder einem coolen Zeltplatz. Diese Karte ist eine Übersicht von Gruppenhäusern und Zeltplätzen für Pfadfinder und soll euch bei der Suche unterstützen.</p>
-		<p>Jeder ist herzlich eingeladen an diesem Projekt mitzuarbeiten und die Karte zu ergänzen. Wenn du ein Haus/einen Zeltplatz ergänzen möchtest oder einen Fehler gefunden hast, melde ich gerne unter <a href="mailto:campsites@schwarzzelt-it.de">campsites@schwarzzelt-it.de</a> bei uns oder eröffne einen Issue bzw. Pull-Request bei <a href="https://github.com/Schwarzzelt-IT/campsites" target="_blank">GitHub</a>.</p>
-		<p>Diese Karte wird bereitgestellt von ehrenamtlichen Projekt <a href="https://www.schwarzzelt-it.de" target="_blank">Schwarzzelt IT</a>.</p>
+		<p>Jeder ist herzlich eingeladen an diesem Projekt mitzuarbeiten und die Karte zu ergänzen. Wenn du ein Haus/einen Zeltplatz ergänzen möchtest oder einen Fehler gefunden hast, melde dich gerne unter <a href="mailto:campsites@schwarzzelt-it.de">campsites@schwarzzelt-it.de</a> bei uns oder eröffne einen Issue bzw. Pull-Request bei <a href="https://github.com/Schwarzzelt-IT/campsites" target="_blank">GitHub</a>.</p>
+		<p>Diese Karte wird bereitgestellt vom ehrenamtlichen Projekt <a href="https://www.schwarzzelt-it.de" target="_blank">Schwarzzelt IT</a>.</p>
 		</span>
 		`
 	L.DomEvent.on(
