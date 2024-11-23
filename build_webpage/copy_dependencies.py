@@ -29,3 +29,4 @@ shutil.copytree(
 shutil.copy2("build_webpage/index.html", "webpage/index.html")
 shutil.copy2("build_webpage/campsites.css", "webpage/campsites.css")
 shutil.copy2("build_webpage/map.js", "webpage/map.js")
+shutil.copy2("build_webpage/favicon.ico", "webpage/favicon.ico")
