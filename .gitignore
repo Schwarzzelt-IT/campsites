@@ -8,3 +8,5 @@ build.sh
 # Build results
 webpage
 
+#GeoJson File
+geojsonFeatures.json
