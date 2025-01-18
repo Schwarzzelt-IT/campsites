@@ -1,14 +1,21 @@
+/*Map*/
 html, body {
   height: 100%;
   margin: 0;
 }
+
 .leaflet-container {
-  height: 400px;
-  width: 600px;
-  max-width: 100%;
-  max-height: 100%;
+  height: 100%;
+  width: 100%;
 }
 
+/* CampsiteHouseMarker */
+.fa-campground-home:before {
+  font-size: 10px;
+  content: "\f015 \f6bb";
+}
+
+/* Info Control */
 .leaflet-control-info{
   border: 2px solid rgba(0,0,0,0.2);
   border-radius: 5px;
@@ -46,6 +53,27 @@ html, body {
   position: relative;
 }
 
-.fa-campground-home:before {
-  font-size: 10px;
-  content: "\f015 \f6bb"; }
+/* Logo Control */ 
+.logo.leaflet-control {
+  height: 44px;
+}
+
+.logo > a > img {
+  height: 100%;
+  content:url("Bildmarke_Kothe.drawio.svg");
+  /*#59585b  https://codepen.io/sosuke/pen/Pjoqqp*/
+  filter: invert(34%) sepia(2%) saturate(518%) hue-rotate(219deg) brightness(98%) contrast(92%);
+}
+
+@media (max-width: 500px) {
+  .logo > a > img {
+    height: 100%;
+    content:url("Logo_Kothe.drawio.svg");;
+  }
+}
+
+/* Scale Control */ 
+.leaflet-control-scale {
+	margin-left: 11px !important;
+}
+
