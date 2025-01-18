@@ -59,7 +59,7 @@ html, body {
 }
 
 .logo > a > img {
-  height: 100%;
+  max-height: 100%;
   content:url("Bildmarke_Kothe.drawio.svg");
   /*#59585b  https://codepen.io/sosuke/pen/Pjoqqp*/
   filter: invert(34%) sepia(2%) saturate(518%) hue-rotate(219deg) brightness(98%) contrast(92%);
@@ -67,8 +67,8 @@ html, body {
 
 @media (max-width: 500px) {
   .logo > a > img {
-    height: 100%;
-    content:url("Logo_Kothe.drawio.svg");;
+    max-height: 100%;
+    content:url("Logo_Kothe.drawio.svg");
   }
 }
 
