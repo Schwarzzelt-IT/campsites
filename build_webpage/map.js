@@ -210,8 +210,6 @@ logo.onAdd = function (map) {
 	var div = L.DomUtil.create("div", "logo");
     div.innerHTML = '<a href="https://www.schwarzzelt-it.de/" target="_blank"><img src=""></a>';
     return div;
-
-	return container;
 };
 logo.addTo(map)
 
