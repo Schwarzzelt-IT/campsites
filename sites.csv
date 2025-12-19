@@ -1,6 +1,9 @@
 name,category,latitude,longitude,url
 Baden-Powell Haus,house,48.38034223395842,8.038766681671074,https://www.baden-powell-haus.de/
+Baden-Powell-Haus Mönchengladbach,house,51.157191764709545,6.491335071057849,https://bipi-haus.de/
 Baden Powell Park,campsite,42.217505,12.132649,http://www.bppark.it/j/index.php?lang=en
+Bärenbachhütte,house,48.269137653963796,10.597334622688644,https://www.dpsg-augsburg.de/haeuser-und-zeltplaetze/baerenbachhuette/
+Bärenbachzeltplatz,campsite,48.26680977233413,10.593071575289681,https://www.dpsg-augsburg.de/haeuser-und-zeltplaetze/baerenbachzeltplatz/
 Bäkewiese,campsite,52.39543404913612,13.159515852305248,https://baekewiese.de/baekewiese/
 Base scout Il Rostiolo,campsite house,44.4653101588064,8.602065256041204,https://liguria.agesci.it/basevara/
 Baustelle Jugendbildungsstätte der PSG Münster,house,51.82261108031491,7.373127394274975,https://psg-baustelle.de/
@@ -19,6 +22,7 @@ Centre of the River Scouts Pilsen,house,49.73010888339401,13.384697591973776,htt
 Centro Nacional de Formação Ambiental São Jacinto,campsite house,40.66723023810884,-8.738000728291308,https://sites.google.com/site/cnfasj
 Deisterhütte,house,52.22071754057519,9.577591967349214,https://www.deisterhuette.de/die-deisterhuette.html
 DPSG Bundeszentrum Westernohe,campsite house,50.59500226055012,8.1134624274041,https://bundeszentrum.dpsg.de
+DPSG Diözesanzentrum Osterberg,campsite house,48.890992801403186,11.272389767696168,https://www.dpsg-eichstaett.de/index.php/dioezesanzentrum-osterberg
 DPSG Diözesanzentrum Rüthen,campsite house,51.471381696998165,8.439064846853114,http://www.dioezesanzentrum-ruethen.de/
 DPSG Göttingen Zelt und Freizeitgelände Holzerode,campsite,51.60318989692111,10.066354964843041,https://dpsg-goettingen.de/unser-stamm/zeltplatz-in-holzerode
 DPSG Seehause Möhnesee-Stockum,house,51.48421867405288,8.155653234185516,https://www.seehause.de
@@ -43,16 +47,24 @@ Internationale Jugendbegegnungsstätte Moulin St. Benoit,campsite house,49.32454
 Internationaler Pfadfinderzeltplatz Bucher Berg,campsite house,49.09222941646482,11.638520727304462,https://www.bucher-berg.de
 Invertrossachs Scout Centre,campsite house,56.21617520089587,-4.293170714803598,https://www.stirlingandtrossachsdistrictscouts.org.uk
 Jugendbegegnungs- und Pfadfindercamp Bärengrund,campsite house,53.162546299108975,13.324717198592264,http://www.tangersdorf.de/
+Jugendbildungsstätte Don Bosco,house,51.27764493188671,7.530663692910937,https://www.don-bosco-rummenohl.de/
 Jugendbildungsstätte Gilwell Sankt Ludger,campsite house,51.72539518695725,7.153716385054926,https://www.gilwell-st-ludger.de/
+Jugendbildungsstätte Haus Sankt Georg,campsite house,51.133345918909214,6.272189236455063,https://www.haussanktgeorg.de/
 Jugendburg Jomsburg,campsite,54.47913861588721,10.112758785140732,https://jomsburg.de
 Jugendburg Ludwigstein,campsite house,51.321881658571826,9.90937779853549,https://www.burgludwigstein.de
 Jugendferienhaus Krekel,house,50.47081375505396,6.534560595504675,https://www.haus-krekel.de 
 Jugendfreizeitstätte Hollager Mühle,campsite house,52.35975697443888,7.962702669740139,https://www.hollager-muehle.de/
 Jugendgästehaus Bahnhof Garbeck,campsite house,51.32151164232875,7.839635471163528,https://bahnhof-garbeck.de/
 Jugendgästehaus Himmelreich,campsite house,51.83504691343349,7.819407569715461,https://www.jgh-himmelreich.de
+Jugendhaus am Ludwigsturm,campsite house,50.20205374662354,10.05784034914928,https://www.ludwigsturm.de/
+Jugendhaus Ensfeld,house,48.83685649827013,11.019733544356418,https://www.dpsg-eichstaett.de/index.php/ensfeld
+Jugendhaus Thalhäusl,house,47.76236268263055,11.990407819469405,http://www.thalhaeusl.de/
+Jugendhaus Alte Leitstube,house,47.6590744567899,12.542966704312349,https://www.seegatterl.de/
+Jugendstätte Rursee,house,50.65497704121524,6.4311699721267646,https://js-rursee.de/
 Jugendzeltplatz Almke,campsite,52.35006172962811,10.86316009856699,https://www.almke.info
 Jugendzeltplatz am Ansveruskreuz,campsite,53.718206066500024,10.739771440938197,https://www.sankt-ansverus.de/jugendzeltplatz/
 Jugendzeltplatz Diemelsee,campsite,51.357709773583125,8.722932640865197,https://diemelsee.de/jugendzeltplatz-diemelsee/
+Jugendzeltplatz Kaiserbachtal,campsite,49.15992744893627,7.986046716015032,https://www.kaiserbachtal.de/
 Jugendzeltplatz Heinrich Suso e.V.,campsite,47.71241168191853,9.180348541120226,http://zeltplatz-konstanz.de/
 Jugendzeltplatz NiSo (Niedersonthofener See),campsite,47.63563731807899,10.279252991118774,https://kjr-oberallgaeu.de/service/einrichtungen/jugendzeltplatz-niso
 Jugendzeltplatz Noer,campsite,54.47083503993084,10.006550440964393,https://freizeit-am-meer.de/reiseziele/noer/zeltplatz
@@ -82,10 +94,14 @@ Pfadfinderhütte Odelboding,campsite house,48.16818931587717,13.620881936169754,
 Pfadfinder Kanucamp Tarnschlucht,campsite,44.340171178389355,3.5020869100005565,https://www.tarnschlucht.eu/
 Pfadfinderlandheim Stiefvater,house,50.29010329535972,11.093813293942642,https://pfadfinder-abenteuer.de/unterkuenfte/pfadfinderlandheim-stiefvater/
 Pfadfinderdorf Zellhof,campsite house,47.98491730680244,13.09247642729388,https://www.zellhof.at/
+Pfadfindergästehaus Hauset,house,50.714667452182546,6.0614217868228115,https://www.haussanktgeorg.de/pfadfindergaestehaus-hauset/
+Pfadfinderhaus Kall,house,50.536082259737924,6.547689191458606,https://www.pfadfinderhaus-kall.de
 Pfadfinderhaus Lindersberg,campsite house,49.79902402604746,11.159650386887073,https://www.dpsg-bamberg.de/haeuser/pfadfinderhaus-lindersberg/
+Pfadfinderhaus Röderhaid,campsite house,50.48025157318737,9.822619969497735,https://pfadfinderhaus.net
 Pfadfinderhaus Senden,house,51.87198309492046,7.480860458916903,http://www.pfadfinderhaus-senden.de
 Pfadfinderheim Alte Schule Mittelberg,house,50.33129791555731,11.031942023755272,https://pfadfinder-abenteuer.de/unterkuenfte/pfadfinderheim-alte-schule-mittelberg/
 Pfadfinderheim DPSG Rachtig,campsite house,49.9672226008792,7.014137185019654,https://pfadfinder-rachtig.de
+Pfadfinderheim Hoppelmühle,house,48.78448834337488,10.47022014049962,https://www.dpsg-augsburg.de/haeuser-und-zeltplaetze/hoppelmuehle/
 Pfadfinderheim Montafon,campsite house,47.0724359503869,9.878729069597174,https://www.pfadis-montafon.com/der-lagerplatz
 Pfadfinderheim Welfenhof,campsite house,52.462899327476634,10.604632901001493,https://welfenhof-gifhorn.de/
 Pfadfinderlager Brexbachtal,campsite,50.446982314944016,7.595302353162599,https://www.erlebnisraum-brex.de
@@ -135,6 +151,7 @@ Spejdergården Tydal,campsite house,54.63030615007969,9.388465073743182,https://
 St. Georgshaus - DPSG Brilon,house,51.30399041729467,8.505091672178189,https://www.dpsg-brilon.de/assinghausen.php
 St. Nikolaus Jugendstätte Rursee,house,50.654852252887224,6.43096118563417,https://www.nikolaus-rursee.de/
 Stevninghus Spejdercenter,campsite house,54.954600163306175,9.424436861441636,https://stevninghus.bookhus.dk/
+Tagungs- und Gästehaus St. Georg,house,50.9188509362981,6.956731126395907,https://www.stgeorg.koeln/
 Tagungs- und Seminarhaus D5,house,51.36920993467112,12.732130800056106,https://www.ndk-wurzen.de/unser-haus/tagungs-und-seminarhaus/
 TECHUANA International Scout and Guide Center,campsite house,46.57961146006624,13.96846387493923,https://www.techuana.at/
 Tiroler Pfadfinderzentrum Igls,campsite house,47.22286194934207,11.431749327274074,https://www.pfadfinder-tirol.at/tpz/
@@ -156,6 +173,7 @@ Witzy Camp,campsite,47.272634,9.535240,https://pfadi-feldkirch.com/
 Zelena Scout Centre,house,50.10727208704129,14.392456686886224,http://www.klubovna-zelena.cz/uvod-kopie-en/
 Zeltlagerplatz Matschatsch,campsite,46.43929137700543,11.233970501944167,https://landesverband.pfadfinder.bz/zeltlagerplatz-matschatsch/
 Zeltlagerplatz Naturns,campsite,46.63931159979493,11.000200205379285,https://naturns.pfadfinder.bz/zeltlagerplatz-naturns/
+Zeltplatz Am Auwaldsee,campsite,48.753960629318144,11.45973640838336,http://www.zeltplatz-in.de/
 Zeltplatz Friedensau,campsite house,52.215249951110195,11.987549182946058,https://zeltplatz-friedensau.de/
 Zeltplatz Stellberg,campsite,50.54091642674993,9.87625056086336,https://www.hofbieber-tourismus.de/gruppenunterkuenfte
 Zeltplatz Tönebön-Camp,campsite,52.08884606248826,9.381971479869181,https://www.toeneboencamp-hameln.de/
