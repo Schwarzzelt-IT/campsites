@@ -1,4 +1,5 @@
 name,category,latitude,longitude,url
+Altes Wasserwerk Isselburg,campsite,51.827984995969864,6.452973808355639,https://hausbuchen.de/haussuche.php?id_obj=6658&pass=12036&code=vw4z
 Baden-Powell Haus,house,48.38034223395842,8.038766681671074,https://www.baden-powell-haus.de/
 Baden-Powell-Haus Mönchengladbach,house,51.157191764709545,6.491335071057849,https://bipi-haus.de/
 Baden Powell Park,campsite,42.217505,12.132649,http://www.bppark.it/j/index.php?lang=en
@@ -26,6 +27,7 @@ DPSG Diözesanzentrum Osterberg,campsite house,48.890992801403186,11.27238976769
 DPSG Diözesanzentrum Rüthen,campsite house,51.471381696998165,8.439064846853114,http://www.dioezesanzentrum-ruethen.de/
 DPSG Göttingen Zelt und Freizeitgelände Holzerode,campsite,51.60318989692111,10.066354964843041,https://dpsg-goettingen.de/unser-stamm/zeltplatz-in-holzerode
 DPSG Seehause Möhnesee-Stockum,house,51.48421867405288,8.155653234185516,https://www.seehause.de
+DPSG Stamm St. Petronilla Handorf,campsite house,52.009286052717385,7.7124548104437585,https://dpsg-handorf.de/
 DPSG Zeltplatz Altmühlsee Pavillon,campsite,49.122410886744,10.720613811962508,https://www.zelten-am-see.de/
 Drave - Rover Scout Center,campsite,40.86110563032291,-8.117159944183076,https://drave.escutismo.pt/
 Drienok Mošovce,campsite house,48.90297835446577,18.89193890372714,https://www.drienok.sk/
@@ -179,6 +181,7 @@ Zelena Scout Centre,house,50.10727208704129,14.392456686886224,http://www.klubov
 Zeltlagerplatz Matschatsch,campsite,46.43929137700543,11.233970501944167,https://landesverband.pfadfinder.bz/zeltlagerplatz-matschatsch/
 Zeltlagerplatz Naturns,campsite,46.63931159979493,11.000200205379285,https://naturns.pfadfinder.bz/zeltlagerplatz-naturns/
 Zeltplatz Am Auwaldsee,campsite,48.753960629318144,11.45973640838336,http://www.zeltplatz-in.de/
+Zeltplatz DPSG Ahaus,campsite,52.07280011177474,6.95855183459822,https://dpsg-freundeskreis.de/zeltplatz/
 Zeltplatz Friedensau,campsite house,52.215249951110195,11.987549182946058,https://zeltplatz-friedensau.de/
 Zeltplatz Stellberg,campsite,50.54091642674993,9.87625056086336,https://www.hofbieber-tourismus.de/gruppenunterkuenfte
 Zeltplatz Tönebön-Camp,campsite,52.08884606248826,9.381971479869181,https://www.toeneboencamp-hameln.de/
